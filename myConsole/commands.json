@@ -1,0 +1,18 @@
+﻿{{
+  "commands": [
+    {
+      "command": "command1",
+      "atributtes": [
+        {
+          "longFormat": "path",
+          "shortFormat": "/P"
+        },
+        {
+          "longFormat": "path",
+          "shortFormat": "/P"
+        }
+      ],
+      "function": "command1Function"
+    }
+  ]
+}
