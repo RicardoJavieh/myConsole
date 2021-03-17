@@ -6,8 +6,20 @@ namespace myConsole
 {
     class Program{
         static void Main(){
-            ForFiles commandTest = new ForFiles();
-            commandTest.IOcommand("forfiles -p B:\\Descargas\\Demo.CS".Split());
+            string consoleInput;
+            var commandTest;
+            while (true){
+                consoleInput = "";
+                string[] commandArray = consoleInput.Split();
+                if (commandArray[0] == "forfiles"){
+                    commandTest = new ForFiles();
+                }
+                Console.Write(">> ");
+                consoleInput = Console.ReadLine();
+                commandTest.IOcommand(commandArray);
+                commandTest = null;
+            }
+            
         }
     }
 }

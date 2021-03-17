@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using CommandLine;
 using System.Diagnostics;
-using System.IO;
 
 namespace myConsole {
     public class ForFiles{
-        public void IOcommand(string[] args){
+        public async void IOcommand(string[] args){
             Parser.Default.ParseArguments<OptionsForFiles>(args)
                 .WithParsed(Run)
                 .WithNotParsed(HandleParseError);
@@ -29,16 +27,18 @@ namespace myConsole {
         }
 
         private static void Run(OptionsForFiles opts){
+            string command = "/C forfiles"
+                + (opts.pathname != null ? (" /P " + opts.pathname) : "")
+                + (opts.searchmask != null ? (" /M " + opts.searchmask) : "")
+                + (opts.recursively ? " /S" : "");
             Process process = new Process();
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C forfiles" 
-                + (!opts.pathname.Equals("") ? "/P " + opts.pathname:"") 
-                + (!opts.searchmask.Equals("")? "/M " + opts.searchmask:"") 
-                + (opts.recursively.Equals(true)?"/S":"");
+            startInfo.Arguments = command;
             process.StartInfo = startInfo;
             process.Start();
+            process.WaitForExit();
         }
     }
     

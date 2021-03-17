@@ -9,7 +9,7 @@ namespace myConsole{
         [Option('m', "searchmask", Required = false, HelpText = "Filtra los archivos con una mascara especifica.")]
         public string searchmask { get; set; }
 
-        [Option('s', "", Required = false, HelpText = "Hace la funcion recursiva (Subdirectorios).")]
+        [Option('s', "recurs", Required = false, HelpText = "Hace la funcion recursiva (Subdirectorios).")]
         public bool recursively { get; set; }
     }
 
