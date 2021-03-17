@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using CommandLine;
-using System.Threading;
+using System.Diagnostics;
+using System.IO;
 
 namespace myConsole {
     public class ForFiles{
@@ -28,8 +29,16 @@ namespace myConsole {
         }
 
         private static void Run(OptionsForFiles opts){
-            Console.WriteLine("Parser success");
-            Thread.Sleep(2000);
+            Process process = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C forfiles" 
+                + (!opts.pathname.Equals("") ? "/P " + opts.pathname:"") 
+                + (!opts.searchmask.Equals("")? "/M " + opts.searchmask:"") 
+                + (opts.recursively.Equals(true)?"/S":"");
+            process.StartInfo = startInfo;
+            process.Start();
         }
     }
     
