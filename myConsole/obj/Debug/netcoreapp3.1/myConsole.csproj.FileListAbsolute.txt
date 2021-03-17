@@ -1,0 +1,4 @@
+C:\Users\rjavier\Documents\projectsCsharp\myConsole\myConsole\bin\Debug\netcoreapp3.1\myConsole.exe
+C:\Users\rjavier\Documents\projectsCsharp\myConsole\myConsole\obj\Debug\netcoreapp3.1\myConsole.csprojAssemblyReference.cache
+C:\Users\rjavier\Documents\projectsCsharp\myConsole\myConsole\obj\Debug\netcoreapp3.1\myConsole.AssemblyInfoInputs.cache
+C:\Users\rjavier\Documents\projectsCsharp\myConsole\myConsole\obj\Debug\netcoreapp3.1\myConsole.AssemblyInfo.cs
