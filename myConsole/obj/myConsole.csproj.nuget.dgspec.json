@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rjavier\\Documents\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj": {}
+    "B:\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rjavier\\Documents\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj": {
+    "B:\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rjavier\\Documents\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj",
+        "projectUniqueName": "B:\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj",
         "projectName": "myConsole",
-        "projectPath": "C:\\Users\\rjavier\\Documents\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj",
-        "packagesPath": "C:\\Users\\rjavier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rjavier\\Documents\\projectsCsharp\\myConsole\\myConsole\\obj\\",
+        "projectPath": "B:\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj",
+        "packagesPath": "C:\\Users\\ricja\\.nuget\\packages\\",
+        "outputPath": "B:\\projectsCsharp\\myConsole\\myConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rjavier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ricja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "CommandLineParser": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
@@ -58,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

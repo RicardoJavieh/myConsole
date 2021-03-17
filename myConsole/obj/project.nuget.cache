@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zsRAkc7alT/jkr1tipiQyTo8yR9uP3EKZGP3nU5Vz9RgTGrpx0TR61OVnl4S6TtyBjAnqIYq3Nxqi3cFTNosqg==",
+  "dgSpecHash": "d4F+GyeI90UhAznPVCEqkZ/d8r4z6w1d8aJvadZB832sFeCC/DGF+ggxpOx53CGVMO8+nqwteTL/++/YG0bzGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rjavier\\Documents\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj",
+  "projectFilePath": "B:\\projectsCsharp\\myConsole\\myConsole\\myConsole.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rjavier\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\ricja\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
+    "C:\\Users\\ricja\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }
